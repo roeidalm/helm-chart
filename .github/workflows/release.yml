@@ -48,3 +48,4 @@ jobs:
         uses: helm/chart-releaser-action@v1.7.0
         env:
           CR_TOKEN: "${{ github.token }}"
+          CR_SKIP_EXISTING: true
