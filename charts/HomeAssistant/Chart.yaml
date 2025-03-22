@@ -9,7 +9,7 @@ keywords:
   - home-assistant
   - hass
   - homeassistant
-home: https://github.com/roeidalm/helms/tree/main/charts/home-assistant
+home: https://github.com/roeidalm/helm-chart/tree/main/charts/HomeAssistant
 icon: https://upload.wikimedia.org/wikipedia/en/4/49/Home_Assistant_logo_%282023%29.svg
 sources:
   - https://github.com/home-assistant/home-assistant

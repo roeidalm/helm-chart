@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - esphome
   - home-automation
-home: https://github.com/roeidalm/helms/tree/main/charts/esphome
+home: https://github.com/roeidalm/helm-chart/tree/main/charts/esphome
 icon: https://raw.githubusercontent.com/esphome/esphome-docs/v1.18.0/_static/favicon-256x256.png
 sources:
   - https://github.com/esphome/esphome
