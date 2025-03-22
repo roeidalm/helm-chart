@@ -1,0 +1,10 @@
+.venv
+.vscode
+charts/*/charts
+**/*.tgz
+**/*.tar.gz
+**/*.tar.bz2
+**/*.tar.xz
+**/*.zip
+**/*.whl
+**/*.whl.zip
