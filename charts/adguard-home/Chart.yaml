@@ -22,7 +22,4 @@ dependencies:
     version: 4.5.2
 annotations:
   selfUsages.search-tag: none
-  selfUsages.image_name: adguard/adguardhome    
-  artifacthub.io/changes: |-
-    - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+  selfUsages.image_name: adguard/adguardhome
