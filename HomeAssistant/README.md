@@ -1,5 +1,7 @@
 # home-assistant
 
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/home-assistant-helm)](https://artifacthub.io/packages/search?repo=home-assistant-helm)
+
 Helm chart originally based on a chart from [k8s-at-home](https://github.com/k8s-at-home/charts).
 
 ## Source Code
