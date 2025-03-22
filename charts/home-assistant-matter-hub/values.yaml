@@ -1,0 +1,99 @@
+# Default values for home-assistant-matter-hub
+
+image:
+  repository: luligu/matterbridge
+  tag:
+  pullPolicy: IfNotPresent
+
+service:
+  main:
+    enabled: true
+    ports:
+      http:
+        enabled: true
+        port: 8283
+        targetPort: 8283
+        protocol: TCP
+      udp:
+        enabled: true
+        port: 8283
+        targetPort: 8283
+        protocol: UDP
+
+ingress:
+  main:
+    enabled: false
+    primary: true
+    nameOverride:
+    annotations: {}
+    labels: {}
+    ingressClassName: 
+    hosts:
+      - host: "matterhub.your-domain.com"
+        paths:
+          - path: /
+            pathType: Prefix
+            service:
+              name:              
+              port:
+
+
+#  you must to use an external network for the pod to work
+podAnnotations:
+ k8s.v1.cni.cncf.io/networks: |
+          [{
+            "name": "multus-iot",
+            "namespace": "default"
+          }]
+
+
+persistence:
+  data:
+    enabled: false
+    type: pvc
+    mountPath: /home/node/Matterbridge
+    readOnly: false
+    storageClass: 
+    accessMode: ReadWriteOnce
+    size: 1Gi
+  env-data:
+    enabled: false
+    type: pvc
+    mountPath: /home/node/.matterbridge
+    readOnly: false
+    storageClass: 
+    accessMode: ReadWriteOnce
+    size: 1Gi
+
+# Pod Security Context to ensure proper permissions
+podSecurityContext:
+  runAsUser: 1000
+  runAsGroup: 1000
+  fsGroup: 1000
+
+securityContext:
+  allowPrivilegeEscalation: false
+  capabilities:
+    drop:
+      - ALL
+
+# Probes configuration
+probes:
+  startup:
+    enabled: false
+  liveness:
+    enabled: false
+  readiness:
+    enabled: false
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 500m
+    memory: 256Mi
+
+nodeSelector: {}
+tolerations: []
+affinity: {}

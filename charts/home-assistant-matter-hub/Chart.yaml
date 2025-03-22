@@ -1,0 +1,19 @@
+apiVersion: v2
+name: home-assistant-matter-hub
+version: 2.2.5
+appVersion: "2.2.5"
+description: Helm chart for deploying Home Assistant Matter Hub
+type: application
+kubeVersion: ">=1.16.0-0"
+maintainers:
+  - name: roeidalm
+    email: dalmedigos@gmail.com
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+keywords:
+  - home-assistant
+  - matter
+  - iot
+  - smart-home
