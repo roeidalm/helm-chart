@@ -20,3 +20,9 @@ dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com
     version: 4.5.2
+annotations:
+  selfUsages.search-tag: none
+  selfUsages.image_name: adguard/adguardhome    
+  artifacthub.io/changes: |-
+    - kind: changed
+      description: Upgraded `common` chart dependency to version 4.5.2
