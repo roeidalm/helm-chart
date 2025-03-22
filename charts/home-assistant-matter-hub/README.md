@@ -1,14 +1,14 @@
-# esphome
+# home-assistant-matter-hub
 
-![Version: 8.4.2](https://img.shields.io/badge/Version-8.4.2-informational?style=flat-square) ![AppVersion: 1.18.0](https://img.shields.io/badge/AppVersion-1.18.0-informational?style=flat-square)
+![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat-square)
 
-ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.
+Home Assistant Matter Hub enables Matter device support in Home Assistant by running a Matter hub controller.
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/k8s-at-home/charts/issues/new/choose)**
 
 ## Source Code
 
-* <https://github.com/esphome/esphome>
+* <https://github.com/home-assistant/matter-server>
 
 ## Requirements
 
@@ -25,23 +25,23 @@ Kubernetes: `>=1.16.0-0`
 ```console
 helm repo add k8s-at-home https://k8s-at-home.com/charts/
 helm repo update
-helm install esphome k8s-at-home/esphome
+helm install home-assistant-matter-hub k8s-at-home/home-assistant-matter-hub
 ```
 
 ## Installing the Chart
 
-To install the chart with the release name `esphome`
+To install the chart with the release name `home-assistant-matter-hub`
 
 ```console
-helm install esphome k8s-at-home/esphome
+helm install home-assistant-matter-hub k8s-at-home/home-assistant-matter-hub
 ```
 
 ## Uninstalling the Chart
 
-To uninstall the `esphome` deployment
+To uninstall the `home-assistant-matter-hub` deployment
 
 ```console
-helm uninstall esphome
+helm uninstall home-assistant-matter-hub
 ```
 
 The command removes all the Kubernetes components associated with the chart **including persistent volumes** and deletes the release.
@@ -54,20 +54,20 @@ Other values may be used from the [values.yaml](https://github.com/k8s-at-home/l
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
 ```console
-helm install esphome \
+helm install home-assistant-matter-hub \
   --set env.TZ="America/New York" \
-    k8s-at-home/esphome
+    k8s-at-home/home-assistant-matter-hub
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install esphome k8s-at-home/esphome -f values.yaml
+helm install home-assistant-matter-hub k8s-at-home/home-assistant-matter-hub -f values.yaml
 ```
 
 ## Custom configuration
 
-N/A
+The Matter hub requires a USB dongle that supports Thread/Matter border routing capabilities. Make sure to configure the appropriate USB device in your values.yaml.
 
 ## Values
 
@@ -77,31 +77,27 @@ N/A
 |-----|------|---------|-------------|
 | env | object | See below | environment variables. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"esphome/esphome"` | image repository |
-| image.tag | string | `"1.18.0"` | image tag |
+| image.repository | string | `"ghcr.io/home-assistant/matter-server"` | image repository |
+| image.tag | string | `"1.0.0"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ## Changelog
 
-### Version 8.4.2
+### Version 1.0.0
 
 #### Added
 
-N/A
+- Initial release of the home-assistant-matter-hub chart
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.5.2
+N/A
 
 #### Fixed
 
 N/A
-
-### Older versions
-
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/esphome?modal=changelog)
 
 ## Support
 
