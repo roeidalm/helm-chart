@@ -24,9 +24,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add andrenarchy https://andrenarchy.github.io/helm-charts/
+helm repo add roeidalm https://roeidalm.github.io/helm-charts/
 helm repo update
-helm install home-assistant andrenarchy/home-assistant
+helm install home-assistant roeidalm/home-assistant
 ```
 
 ## Installing the Chart
@@ -34,7 +34,7 @@ helm install home-assistant andrenarchy/home-assistant
 To install the chart with the release name `home-assistant`
 
 ```console
-helm install home-assistant andrenarchy/home-assistant
+helm install home-assistant roeidalm/home-assistant
 ```
 
 ## Uninstalling the Chart
@@ -57,13 +57,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install home-assistant \
   --set env.TZ="America/New York" \
-    andrenarchy/home-assistant
+    roeidalm/home-assistant
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install home-assistant andrenarchy/home-assistant -f values.yaml
+helm install home-assistant roeidalm/home-assistant -f values.yaml
 ```
 
 ## Custom configuration
