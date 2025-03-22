@@ -25,5 +25,3 @@ annotations:
   artifacthub.io/changes: |-
     - kind: changed
       description: Upgraded `common` chart dependency to version 4.5.2
-  artifacthub.io/search-tag: stable
-  artifacthub.io/images: home-assistant/home-assistant
