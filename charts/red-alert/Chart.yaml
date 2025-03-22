@@ -10,7 +10,7 @@ keywords:
   - oref
   - israel
 home: https://github.com/roeidalm/helm-chart/tree/main/charts/red-alert
-# icon: https://raw.githubusercontent.com/roeidalm/helm-chart/master/images/logo.png
+icon: https://raw.githubusercontent.com/roeidalm/helm-chart/main/charts/red-alert/icon/129445_tumb_700X500.png
 sources:
   - https://github.com/techblog/redalert
 maintainers:
