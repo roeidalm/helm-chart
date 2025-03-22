@@ -18,9 +18,6 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | influxdb | 5.3.5 |
-| https://charts.bitnami.com/bitnami | mariadb | 11.0.14 |
-| https://charts.bitnami.com/bitnami | postgresql | 11.6.12 |
 | https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
@@ -67,77 +64,6 @@ Alternatively, a YAML file that specifies the values for the above parameters ca
 ```console
 helm install home-assistant roeidalm/home-assistant -f values.yaml
 ```
-
-## Custom configuration
-
-### HTTP 400 bad request while accessing from your browser
-
-When configuring Home Assistant behind a reverse proxy make sure you configure the [http](https://www.home-assistant.io/integrations/http) component and set `trusted_proxies` correctly and `use_x_forwarded_for` to `true`.
-
-For example (by edit the configuration.yaml hosted in your pod):
-
-```yaml
-http:
-  server_host: 0.0.0.0
-  ip_ban_enabled: true
-  login_attempts_threshold: 5
-  use_x_forwarded_for: true
-  trusted_proxies:
-  # Pod CIDR
-  - 10.69.0.0/16
-  # Node CIDR
-  - 192.168.42.0/24
-```
-
-### Z-Wave / Zigbee
-
-A Z-Wave and/or Zigbee controller device could be used with Home Assistant if passed through from the host to the pod. Skip this section if you are using zwave2mqtt and/or zigbee2mqtt or plan to.
-
-First you will need to mount your Z-Wave and/or Zigbee device into the pod, you can do so by adding the following to your values:
-
-```yaml
-persistence:
-  usb:
-    enabled: true
-    type: hostPath
-    hostPath: /path/to/device
-```
-
-Second you will need to set a nodeAffinity rule, for example:
-
-```yaml
-affinity:
-  nodeAffinity:
-    requiredDuringSchedulingIgnoredDuringExecution:
-      nodeSelectorTerms:
-      - matchExpressions:
-        - key: app
-          operator: In
-          values:
-          - zwave-controller
-```
-
-... where a node with an attached zwave and/or zigbee controller USB device is labeled with `app: zwave-controller`
-
-### Websockets
-
-If an ingress controller is being used with home assistant, web sockets must be enabled using annotations to enable support of web sockets.
-
-Using NGINX as an example the following will need to be added to your values:
-
-```yaml
-ingress:
-  main:
-    enabled: true
-    annotations:
-      nginx.org/websocket-services: home-assistant
-    hosts:
-      - host: home-assistant.example.org
-        paths:
-          - path: /
-```
-
-The value derived is the name of the kubernetes service object for home-assistant
 
 ### Metrics collection
 
