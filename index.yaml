@@ -136,4 +136,34 @@ entries:
     urls:
     - https://github.com/roeidalm/helm-chart/releases/download/zigbee2mqtt-1.19.1/zigbee2mqtt-1.19.1.tgz
     version: 1.19.1
-generated: "2025-03-22T18:33:05.396324554Z"
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
+    appVersion: 1.19.1
+    created: "2025-03-22T18:45:45.557139115Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Bridges events and allows you to control your Zigbee devices via
+      MQTT
+    digest: 4c3ddf15056cd9c7f1c628aa3b1f2a37291743da2351d811c8ec14d9ceb289ed
+    home: https://github.com/roeidalm/helm-chart/tree/main/charts/zigbee2mqtt
+    icon: https://raw.githubusercontent.com/Koenkk/zigbee2mqtt/master/images/logo.png
+    keywords:
+    - zigbee
+    - mqtt
+    - home-assistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dalmedigos@gmail.com
+      name: roei dalmedigos
+    name: zigbee2mqtt
+    sources:
+    - https://github.com/Koenkk/zigbee2mqtt
+    urls:
+    - https://github.com/roeidalm/helm-chart/releases/download/zigbee2mqtt-1.19.0/zigbee2mqtt-1.19.0.tgz
+    version: 1.19.0
+generated: "2025-03-22T18:45:45.557155937Z"
