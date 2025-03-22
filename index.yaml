@@ -120,4 +120,28 @@ entries:
     urls:
     - https://github.com/roeidalm/helm-chart/releases/download/home-assistant-2025.3.3/home-assistant-2025.3.3.tgz
     version: 2025.3.3
-generated: "2025-03-22T15:15:26.456847498Z"
+  home-assistant-matter-hub:
+  - apiVersion: v2
+    appVersion: 2.2.5
+    created: "2025-03-22T15:27:54.941304966Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Helm chart for deploying Home Assistant Matter Hub
+    digest: 5b0758260f1386a55a1d0016b32e2fd3e9ece6b657fc91c65910fcad72b0a772
+    keywords:
+    - home-assistant
+    - matter
+    - iot
+    - smart-home
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dalmedigos@gmail.com
+      name: roeidalm
+    name: home-assistant-matter-hub
+    type: application
+    urls:
+    - https://github.com/roeidalm/helm-chart/releases/download/home-assistant-matter-hub-2.2.5/home-assistant-matter-hub-2.2.5.tgz
+    version: 2.2.5
+generated: "2025-03-22T15:27:54.9413125Z"
