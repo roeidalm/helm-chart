@@ -8,3 +8,4 @@ charts/*/charts
 **/*.zip
 **/*.whl
 **/*.whl.zip
+**/values-secrets.yaml
