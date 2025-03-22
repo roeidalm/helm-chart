@@ -1,0 +1,139 @@
+apiVersion: v1
+entries:
+  adguard-home:
+  - apiVersion: v2
+    appVersion: v0.107.59
+    created: "2025-03-22T17:39:44.238943514Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: DNS proxy as ad-blocker for local network
+    digest: a72018722360ff54ac41d5b57079ed937e8de3501437d4c538c60f3ad8b954b2
+    home: https://github.com/roeidalm/helm-chart/tree/main/charts/adguard-home
+    icon: https://avatars3.githubusercontent.com/u/8361145?s=200&v=4
+    keywords:
+    - adguard-home
+    - adblock
+    - dns
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dalmedigos@gmail.com
+      name: roei dalmedigos
+    name: adguard-home
+    sources:
+    - https://github.com/AdguardTeam/AdGuardHome
+    urls:
+    - https://github.com/roeidalm/helm-chart/releases/download/adguard-home-0.106.59/adguard-home-0.106.59.tgz
+    version: 0.106.59
+  esphome:
+  - apiVersion: v2
+    appVersion: 2025.3.0
+    created: "2025-03-22T17:39:44.351185031Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful
+      configuration files and control them remotely through Home Automation systems.
+    digest: f7886f882e49472e8e02691340682675bbd83ebdcf56746c77e0b0396d883fd9
+    home: https://github.com/roeidalm/helm-chart/tree/main/charts/esphome
+    icon: https://raw.githubusercontent.com/esphome/esphome-docs/v1.18.0/_static/favicon-256x256.png
+    keywords:
+    - esphome
+    - home-automation
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dalmedigos@gmail.com
+      name: roei dalmedigos
+    name: esphome
+    sources:
+    - https://github.com/esphome/esphome
+    urls:
+    - https://github.com/roeidalm/helm-chart/releases/download/esphome-2025.3.0/esphome-2025.3.0.tgz
+    version: 2025.3.0
+  home-assistant:
+  - apiVersion: v2
+    appVersion: 2025.3.3
+    created: "2025-03-22T17:39:44.448543321Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Home Assistant
+    digest: 373134f1d8de02c70065af0887f6f7f38b17618056b1b241be75e794e90b94c0
+    home: https://github.com/roeidalm/helm-chart/tree/main/charts/HomeAssistant
+    icon: https://upload.wikimedia.org/wikipedia/en/4/49/Home_Assistant_logo_%282023%29.svg
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dalmedigos@gmail.com
+      name: roei dalmedigos
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/home-assistant
+    - https://github.com/cdr/code-server
+    urls:
+    - https://github.com/roeidalm/helm-chart/releases/download/home-assistant-2025.3.3/home-assistant-2025.3.3.tgz
+    version: 2025.3.3
+  home-assistant-matter-hub:
+  - apiVersion: v2
+    appVersion: 2.2.5
+    created: "2025-03-22T17:39:44.563501724Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Helm chart for deploying Home Assistant Matter Hub
+    digest: ab281c6911d0afc32e5ac06b115dd4a3bbd88294048fa5580b8f1d702e159f22
+    home: https://github.com/roeidalm/helm-chart/tree/main/charts/home-assistant-matter-hub
+    icon: https://github.com/Luligu/matterbridge/blob/main/frontend/public/matterbridge.svg
+    keywords:
+    - home-assistant
+    - matter
+    - iot
+    - smart-home
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dalmedigos@gmail.com
+      name: roeidalm
+    name: home-assistant-matter-hub
+    type: application
+    urls:
+    - https://github.com/roeidalm/helm-chart/releases/download/home-assistant-matter-hub-2.2.5/home-assistant-matter-hub-2.2.5.tgz
+    version: 2.2.5
+  zigbee2mqtt:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
+    appVersion: 1.19.1
+    created: "2025-03-22T17:39:44.667517495Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Bridges events and allows you to control your Zigbee devices via
+      MQTT
+    digest: 8d4fe82ca9f9cf12d0265f4e237d12000f300a7c9fa898907003b8db24feea19
+    home: https://github.com/roeidalm/helm-chart/tree/main/charts/zigbee2mqtt
+    icon: https://www.zigbee2mqtt.io/images/logo.png
+    keywords:
+    - zigbee
+    - mqtt
+    - home-assistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dalmedigos@gmail.com
+      name: roei dalmedigos
+    name: zigbee2mqtt
+    sources:
+    - https://github.com/Koenkk/zigbee2mqtt
+    urls:
+    - https://github.com/roeidalm/helm-chart/releases/download/zigbee2mqtt-1.19.1/zigbee2mqtt-1.19.1.tgz
+    version: 1.19.1
+generated: "2025-03-22T17:39:44.667527314Z"
