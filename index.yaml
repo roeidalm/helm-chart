@@ -90,7 +90,7 @@ entries:
     description: Helm chart for deploying Home Assistant Matter Hub
     digest: a75ef123e7c40373faeeaa331c56ab5e98a518b00c44e8fc6515bed3cf867792
     home: https://github.com/roeidalm/helm-chart/tree/main/charts/home-assistant-matter-hub
-    icon: https://github.com/Luligu/matterbridge/blob/main/frontend/public/matterbridge%20624x624.png?raw=true
+    icon: https://raw.githubusercontent.com/Luligu/matterbridge/main/frontend/public/matterbridge%20624x624.png
     keywords:
     - home-assistant
     - matter
@@ -121,7 +121,7 @@ entries:
       MQTT
     digest: d25d7422e8e641db2ccaf25d861cbcebe76251cf02ad1abe29090f5cd8d53560
     home: https://github.com/roeidalm/helm-chart/tree/main/charts/zigbee2mqtt
-    icon: https://www.zigbee2mqtt.io/logo.png
+    icon: https://raw.githubusercontent.com/Koenkk/zigbee2mqtt/master/images/logo.png
     keywords:
     - zigbee
     - mqtt
