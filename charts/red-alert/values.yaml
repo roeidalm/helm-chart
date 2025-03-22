@@ -1,0 +1,53 @@
+# Default values for red-alert chart
+
+replicaCount: 1
+
+image:
+  repository: techblog/redalert
+  pullPolicy: IfNotPresent
+  tag: ""  # Defaults to .Chart.AppVersion if not specified
+
+nameOverride: ""
+
+env:
+  - name: MQTT_HOST
+    value: "emqx"
+  - name: MQTT_PORT
+    value: "1883"
+  - name: DEBUG_MODE
+    value: "False"
+
+envFrom:
+  - secretRef:
+      name: redalert-secrets
+
+# Secret configuration
+# This will create a Kubernetes Secret for the application
+secret:
+  enabled: true
+  name: redalert-secrets
+  data:
+    # Add your secret values here
+    # MQTT_USERNAME: ""
+    # MQTT_PASSWORD: ""
+    # API_KEY: ""
+
+service:
+  enabled: false  # Enable if your application needs a service
+
+ingress:
+  enabled: false  # Enable if your application needs an ingress
+
+resources: {}
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}

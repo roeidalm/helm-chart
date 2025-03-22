@@ -1,0 +1,25 @@
+---
+apiVersion: v2
+appVersion: 3.5.1
+description: Red Alert is a system for alerting about red alerts in areas in Israel
+name: red-alert
+version: 3.5.1
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - red-alert
+  - oref
+  - israel
+home: https://github.com/roeidalm/helm-chart/tree/main/charts/red-alert
+# icon: https://raw.githubusercontent.com/roeidalm/helm-chart/master/images/logo.png
+sources:
+  - https://github.com/techblog/redalert
+maintainers:
+  - name: roei dalmedigos
+    email: dalmedigos@gmail.com
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+annotations:
+  artifacthub.io/search-tag: none
+  artifacthub.io/images: techblog/redalert
