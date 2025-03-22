@@ -136,6 +136,34 @@ entries:
     urls:
     - https://github.com/roeidalm/helm-chart/releases/download/home-assistant-matter-hub-2.2.5/home-assistant-matter-hub-2.2.5.tgz
     version: 2.2.5
+  red-alert:
+  - annotations:
+      artifacthub.io/images: techblog/redalert
+      artifacthub.io/search-tag: none
+    apiVersion: v2
+    appVersion: 3.5.1
+    created: "2025-03-22T19:54:10.254303501Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Red Alert is a system for alerting about red alerts in areas in Israel
+    digest: c94c24193676ccb8b2093022e17fbc653ce89dc15b2f101bc7ab30658532d7d4
+    home: https://github.com/roeidalm/helm-chart/tree/main/charts/red-alert
+    keywords:
+    - red-alert
+    - oref
+    - israel
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dalmedigos@gmail.com
+      name: roei dalmedigos
+    name: red-alert
+    sources:
+    - https://github.com/techblog/redalert
+    urls:
+    - https://github.com/roeidalm/helm-chart/releases/download/red-alert-3.5.1/red-alert-3.5.1.tgz
+    version: 3.5.1
   zigbee2mqtt:
   - annotations:
       artifacthub.io/changes: |-
@@ -197,4 +225,4 @@ entries:
     urls:
     - https://github.com/roeidalm/helm-chart/releases/download/zigbee2mqtt-1.19.0/zigbee2mqtt-1.19.0.tgz
     version: 1.19.0
-generated: "2025-03-22T18:48:53.348047591Z"
+generated: "2025-03-22T19:54:10.357207288Z"
