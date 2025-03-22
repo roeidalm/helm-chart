@@ -1,14 +1,14 @@
-# esphome
+# zigbee2mqtt
 
-![Version: 8.4.2](https://img.shields.io/badge/Version-8.4.2-informational?style=flat-square) ![AppVersion: 1.18.0](https://img.shields.io/badge/AppVersion-1.18.0-informational?style=flat-square)
+![Version: 1.19.1](https://img.shields.io/badge/Version-1.19.1-informational?style=flat-square) ![AppVersion: 1.19.1](https://img.shields.io/badge/AppVersion-1.19.1-informational?style=flat-square)
 
-ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.
+Zigbee2MQTT is a system to control your Zigbee devices via MQTT
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/k8s-at-home/charts/issues/new/choose)**
 
 ## Source Code
 
-* <https://github.com/esphome/esphome>
+* <https://github.com/Koenkk/zigbee2mqtt>
 
 ## Requirements
 
@@ -25,23 +25,23 @@ Kubernetes: `>=1.16.0-0`
 ```console
 helm repo add k8s-at-home https://k8s-at-home.com/charts/
 helm repo update
-helm install esphome k8s-at-home/esphome
+helm install zigbee2mqtt k8s-at-home/zigbee2mqtt
 ```
 
 ## Installing the Chart
 
-To install the chart with the release name `esphome`
+To install the chart with the release name `zigbee2mqtt`
 
 ```console
-helm install esphome k8s-at-home/esphome
+helm install zigbee2mqtt k8s-at-home/zigbee2mqtt
 ```
 
 ## Uninstalling the Chart
 
-To uninstall the `esphome` deployment
+To uninstall the `zigbee2mqtt` deployment
 
 ```console
-helm uninstall esphome
+helm uninstall zigbee2mqtt
 ```
 
 The command removes all the Kubernetes components associated with the chart **including persistent volumes** and deletes the release.
@@ -54,15 +54,15 @@ Other values may be used from the [values.yaml](https://github.com/k8s-at-home/l
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
 ```console
-helm install esphome \
+helm install zigbee2mqtt \
   --set env.TZ="America/New York" \
-    k8s-at-home/esphome
+    k8s-at-home/zigbee2mqtt
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install esphome k8s-at-home/esphome -f values.yaml
+helm install zigbee2mqtt k8s-at-home/zigbee2mqtt -f values.yaml
 ```
 
 ## Custom configuration
@@ -77,15 +77,15 @@ N/A
 |-----|------|---------|-------------|
 | env | object | See below | environment variables. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"esphome/esphome"` | image repository |
-| image.tag | string | `"1.18.0"` | image tag |
+| image.repository | string | `"koenkk/zigbee2mqtt"` | image repository |
+| image.tag | string | `"1.19.1"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ## Changelog
 
-### Version 8.4.2
+### Version 1.19.1
 
 #### Added
 
@@ -101,7 +101,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/esphome?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/zigbee2mqtt?modal=changelog)
 
 ## Support
 

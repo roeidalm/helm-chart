@@ -5,7 +5,7 @@ appVersion: 2.2.5
 description: Helm chart for deploying Home Assistant Matter Hub
 type: application
 home: https://github.com/roeidalm/helm-chart/tree/main/charts/home-assistant-matter-hub
-icon: https://github.com/Luligu/matterbridge/blob/main/frontend/public/matterbridge.svg
+icon: https://github.com/Luligu/matterbridge/blob/main/frontend/public/matterbridge%20624x624.png?raw=true
 kubeVersion: ">=1.16.0-0"
 maintainers:
   - name: roeidalm

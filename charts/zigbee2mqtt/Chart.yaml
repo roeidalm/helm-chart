@@ -10,7 +10,7 @@ keywords:
   - mqtt
   - home-assistant
 home: https://github.com/roeidalm/helm-chart/tree/main/charts/zigbee2mqtt
-icon: https://www.zigbee2mqtt.io/images/logo.png
+icon: https://www.zigbee2mqtt.io/logo.png
 sources:
   - https://github.com/Koenkk/zigbee2mqtt
 maintainers:
