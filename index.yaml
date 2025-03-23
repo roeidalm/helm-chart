@@ -5,6 +5,35 @@ entries:
       selfUsages.image_name: home-assistant/home-assistant
       selfUsages.search-tag: \bstable\b
     apiVersion: v2
+    appVersion: 2025.3.0
+    created: "2025-03-23T07:17:01.308791082Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Home Assistant
+    digest: 7ea1345a55f927d8bd1fcaf078caae61e64cd168fdd80b6ccb04bce855be96f1
+    home: https://github.com/roeidalm/helm-chart/tree/main/charts/HomeAssistant
+    icon: https://upload.wikimedia.org/wikipedia/en/4/49/Home_Assistant_logo_%282023%29.svg
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dalmedigos@gmail.com
+      name: roei dalmedigos
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/home-assistant
+    - https://github.com/cdr/code-server
+    urls:
+    - https://github.com/roeidalm/helm-chart/releases/download/home-assistant-2025.3.0/home-assistant-2025.3.0.tgz
+    version: 2025.3.0
+  - annotations:
+      selfUsages.image_name: home-assistant/home-assistant
+      selfUsages.search-tag: \bstable\b
+    apiVersion: v2
     appVersion: 2.2.5
     created: "2025-03-23T06:35:31.094923849Z"
     dependencies:
@@ -88,4 +117,4 @@ entries:
     urls:
     - https://github.com/roeidalm/helm-chart/releases/download/red-alert-3.5.1/red-alert-3.5.1.tgz
     version: 3.5.1
-generated: "2025-03-23T06:35:31.31670117Z"
+generated: "2025-03-23T07:17:01.308802895Z"
