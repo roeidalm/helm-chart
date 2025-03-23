@@ -1,0 +1,91 @@
+apiVersion: v1
+entries:
+  home-assistant:
+  - annotations:
+      selfUsages.image_name: home-assistant/home-assistant
+      selfUsages.search-tag: \bstable\b
+    apiVersion: v2
+    appVersion: 2.2.5
+    created: "2025-03-23T06:35:31.094923849Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Home Assistant
+    digest: 68ff3327a4b4430bc63f92b5e941d14427f130a6a759bbbfdffb495c54e648e3
+    home: https://github.com/roeidalm/helm-chart/tree/main/charts/HomeAssistant
+    icon: https://upload.wikimedia.org/wikipedia/en/4/49/Home_Assistant_logo_%282023%29.svg
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dalmedigos@gmail.com
+      name: roei dalmedigos
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/home-assistant
+    - https://github.com/cdr/code-server
+    urls:
+    - https://github.com/roeidalm/helm-chart/releases/download/home-assistant-2.2.5/home-assistant-2.2.5.tgz
+    version: 2.2.5
+  home-assistant-matter-hub:
+  - annotations:
+      selfUsages.image_name: luligu/matterbridge
+      selfUsages.search-tag: none
+    apiVersion: v2
+    appVersion: 2.2.5
+    created: "2025-03-23T06:35:31.184868507Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Helm chart for deploying Home Assistant Matter Hub
+    digest: 24c6705dd367dcd963c7b5a5a157e129a0bb06473a3607e4c051e24c585bec76
+    home: https://github.com/roeidalm/helm-chart/tree/main/charts/home-assistant-matter-hub
+    icon: https://raw.githubusercontent.com/Luligu/matterbridge/main/frontend/public/matterbridge%20624x624.png
+    keywords:
+    - home-assistant
+    - matter
+    - iot
+    - smart-home
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dalmedigos@gmail.com
+      name: roeidalm
+    name: home-assistant-matter-hub
+    type: application
+    urls:
+    - https://github.com/roeidalm/helm-chart/releases/download/home-assistant-matter-hub-2.2.5/home-assistant-matter-hub-2.2.5.tgz
+    version: 2.2.5
+  red-alert:
+  - annotations:
+      selfUsages.image_name: techblog/redalert
+      selfUsages.search-tag: none
+    apiVersion: v2
+    appVersion: 3.5.1
+    created: "2025-03-23T06:35:31.316692153Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Red Alert is a system for alerting about red alerts in areas in Israel
+    digest: e036a41fa3515a55e99d2b3e5d75234085e00b1b4050d8b3e2c5b7905b6c3c74
+    home: https://github.com/roeidalm/helm-chart/tree/main/charts/red-alert
+    icon: https://raw.githubusercontent.com/roeidalm/helm-chart/main/charts/red-alert/icon/129445_tumb_700X500.png
+    keywords:
+    - red-alert
+    - oref
+    - israel
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dalmedigos@gmail.com
+      name: roei dalmedigos
+    name: red-alert
+    sources:
+    - https://github.com/techblog/redalert
+    urls:
+    - https://github.com/roeidalm/helm-chart/releases/download/red-alert-3.5.1/red-alert-3.5.1.tgz
+    version: 3.5.1
+generated: "2025-03-23T06:35:31.31670117Z"
