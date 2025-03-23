@@ -20,5 +20,5 @@ keywords:
   - iot
   - smart-home
 annotations:
-  selfUsages.search-tag: none
+  selfUsages.search-tag: "\\b\\d+\\.\\d+\\.\\d+\\b$"
   selfUsages.image_name: luligu/matterbridge
