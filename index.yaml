@@ -29,6 +29,35 @@ entries:
     urls:
     - https://github.com/roeidalm/helm-chart/releases/download/adguard-home-0.107.59/adguard-home-0.107.59.tgz
     version: 0.107.59
+  esphome:
+  - annotations:
+      selfUsages.image_name: esphome/esphome
+      selfUsages.search-tag: \b\d+\.\d+\.\d+\b$
+    apiVersion: v2
+    appVersion: 2025.3.0
+    created: "2025-03-23T07:40:15.73204992Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful
+      configuration files and control them remotely through Home Automation systems.
+    digest: 195d6ead884847ba6883ebdd5fa6183af67e16a8988401d8764729403227e846
+    home: https://github.com/roeidalm/helm-chart/tree/main/charts/esphome
+    icon: https://raw.githubusercontent.com/esphome/esphome-docs/v1.18.0/_static/favicon-256x256.png
+    keywords:
+    - esphome
+    - home-automation
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dalmedigos@gmail.com
+      name: roei dalmedigos
+    name: esphome
+    sources:
+    - https://github.com/esphome/esphome
+    urls:
+    - https://github.com/roeidalm/helm-chart/releases/download/esphome-2025.3.0/esphome-2025.3.0.tgz
+    version: 2025.3.0
   home-assistant:
   - annotations:
       selfUsages.image_name: home-assistant/home-assistant
@@ -147,4 +176,4 @@ entries:
     urls:
     - https://github.com/roeidalm/helm-chart/releases/download/zigbee2mqtt-1.19.0/zigbee2mqtt-1.19.0.tgz
     version: 1.19.0
-generated: "2025-03-23T07:24:35.06955443Z"
+generated: "2025-03-23T07:40:15.732078104Z"
