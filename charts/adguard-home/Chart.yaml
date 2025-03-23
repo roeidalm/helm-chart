@@ -21,5 +21,5 @@ dependencies:
     repository: https://library-charts.k8s-at-home.com
     version: 4.5.2
 annotations:
-  selfUsages.search-tag: none
+  selfUsages.search-tag: "\\bv\\d+\\.\\d+\\.\\d+\\b"
   selfUsages.image_name: adguard/adguardhome
