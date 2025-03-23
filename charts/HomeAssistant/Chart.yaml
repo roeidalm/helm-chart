@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
-appVersion: 2025.3.3
+appVersion: 2.2.5
 description: Home Assistant
 name: home-assistant
-version: 2025.3.3
+version: 2.2.5
 kubeVersion: ">=1.16.0-0"
 keywords:
   - home-assistant
@@ -22,5 +22,5 @@ dependencies:
     repository: https://library-charts.k8s-at-home.com
     version: 4.5.2
 annotations:
-  selfUsages.search-tag: stable
+  selfUsages.search-tag: "\\bstable\\b"
   selfUsages.image_name: home-assistant/home-assistant    
