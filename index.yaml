@@ -1,5 +1,34 @@
 apiVersion: v1
 entries:
+  adguard-home:
+  - annotations:
+      selfUsages.image_name: adguard/adguardhome
+      selfUsages.search-tag: \bv\d+\.\d+\.\d+\b
+    apiVersion: v2
+    appVersion: v0.107.59
+    created: "2025-03-23T07:18:38.484347866Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: DNS proxy as ad-blocker for local network
+    digest: c8aca5b5c8e91a49bec48d69771bd547c873e096c08d8ab8c1c7445bd5181d4e
+    home: https://github.com/roeidalm/helm-chart/tree/main/charts/adguard-home
+    icon: https://avatars3.githubusercontent.com/u/8361145?s=200&v=4
+    keywords:
+    - adguard-home
+    - adblock
+    - dns
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dalmedigos@gmail.com
+      name: roei dalmedigos
+    name: adguard-home
+    sources:
+    - https://github.com/AdguardTeam/AdGuardHome
+    urls:
+    - https://github.com/roeidalm/helm-chart/releases/download/adguard-home-0.107.59/adguard-home-0.107.59.tgz
+    version: 0.107.59
   home-assistant:
   - annotations:
       selfUsages.image_name: home-assistant/home-assistant
@@ -117,4 +146,4 @@ entries:
     urls:
     - https://github.com/roeidalm/helm-chart/releases/download/red-alert-3.5.1/red-alert-3.5.1.tgz
     version: 3.5.1
-generated: "2025-03-23T07:17:01.308802895Z"
+generated: "2025-03-23T07:18:38.484358335Z"
