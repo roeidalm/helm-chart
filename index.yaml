@@ -1,0 +1,150 @@
+apiVersion: v1
+entries:
+  adguard-home:
+  - annotations:
+      selfUsages.image_name: adguard/adguardhome
+      selfUsages.search-tag: \bv\d+\.\d+\.\d+\b
+    apiVersion: v2
+    appVersion: v0.107.59
+    created: "2025-03-23T07:24:34.608396839Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: DNS proxy as ad-blocker for local network
+    digest: 8ee3e25da3072b0b7e43571ac9c7d28792704811691168bb4468cc70c9fc18c9
+    home: https://github.com/roeidalm/helm-chart/tree/main/charts/adguard-home
+    icon: https://avatars3.githubusercontent.com/u/8361145?s=200&v=4
+    keywords:
+    - adguard-home
+    - adblock
+    - dns
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dalmedigos@gmail.com
+      name: roei dalmedigos
+    name: adguard-home
+    sources:
+    - https://github.com/AdguardTeam/AdGuardHome
+    urls:
+    - https://github.com/roeidalm/helm-chart/releases/download/adguard-home-0.107.59/adguard-home-0.107.59.tgz
+    version: 0.107.59
+  home-assistant:
+  - annotations:
+      selfUsages.image_name: home-assistant/home-assistant
+      selfUsages.search-tag: \b\d+\.\d+\.\d+\b$
+    apiVersion: v2
+    appVersion: 2025.3.0
+    created: "2025-03-23T07:24:34.727952829Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Home Assistant
+    digest: 1343107fadd74d929d62f09a18abda4a7cdc613978f68b13551c289f759ca24b
+    home: https://github.com/roeidalm/helm-chart/tree/main/charts/HomeAssistant
+    icon: https://upload.wikimedia.org/wikipedia/en/4/49/Home_Assistant_logo_%282023%29.svg
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dalmedigos@gmail.com
+      name: roei dalmedigos
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/home-assistant
+    - https://github.com/cdr/code-server
+    urls:
+    - https://github.com/roeidalm/helm-chart/releases/download/home-assistant-2025.3.0/home-assistant-2025.3.0.tgz
+    version: 2025.3.0
+  home-assistant-matter-hub:
+  - annotations:
+      selfUsages.image_name: luligu/matterbridge
+      selfUsages.search-tag: \b\d+\.\d+\.\d+\b$
+    apiVersion: v2
+    appVersion: 2.2.5
+    created: "2025-03-23T07:24:34.832604828Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Helm chart for deploying Home Assistant Matter Hub
+    digest: b5de9e16490e1f806b88b7368b003005a81d3cbd12a0238719b1e809d58ebf71
+    home: https://github.com/roeidalm/helm-chart/tree/main/charts/home-assistant-matter-hub
+    icon: https://raw.githubusercontent.com/Luligu/matterbridge/main/frontend/public/matterbridge%20624x624.png
+    keywords:
+    - home-assistant
+    - matter
+    - iot
+    - smart-home
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dalmedigos@gmail.com
+      name: roeidalm
+    name: home-assistant-matter-hub
+    type: application
+    urls:
+    - https://github.com/roeidalm/helm-chart/releases/download/home-assistant-matter-hub-2.2.5/home-assistant-matter-hub-2.2.5.tgz
+    version: 2.2.5
+  red-alert:
+  - annotations:
+      selfUsages.image_name: techblog/redalert
+      selfUsages.search-tag: \b\d+\.\d+\.\d+\b$
+    apiVersion: v2
+    appVersion: 3.5.1
+    created: "2025-03-23T07:24:34.919067286Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Red Alert is a system for alerting about red alerts in areas in Israel
+    digest: 9ccdea5cea30a6b06166af33ecbd33d985ef620d36f3e5ba631eae2b76c6ad7c
+    home: https://github.com/roeidalm/helm-chart/tree/main/charts/red-alert
+    icon: https://raw.githubusercontent.com/roeidalm/helm-chart/main/charts/red-alert/icon/129445_tumb_700X500.png
+    keywords:
+    - red-alert
+    - oref
+    - israel
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dalmedigos@gmail.com
+      name: roei dalmedigos
+    name: red-alert
+    sources:
+    - https://github.com/techblog/redalert
+    urls:
+    - https://github.com/roeidalm/helm-chart/releases/download/red-alert-3.5.1/red-alert-3.5.1.tgz
+    version: 3.5.1
+  zigbee2mqtt:
+  - annotations:
+      selfUsages.image_name: koenkk/zigbee2mqtt
+      selfUsages.search-tag: \b\d+\.\d+\.\d+\b$
+    apiVersion: v2
+    appVersion: 1.19.1
+    created: "2025-03-23T07:24:35.069544742Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Bridges events and allows you to control your Zigbee devices via
+      MQTT
+    digest: e277fde4011504642965f097238a6dcfe99efc12624c28212f8a81c5af43ca95
+    home: https://github.com/roeidalm/helm-chart/tree/main/charts/zigbee2mqtt
+    icon: https://raw.githubusercontent.com/Koenkk/zigbee2mqtt/master/images/logo.png
+    keywords:
+    - zigbee
+    - mqtt
+    - home-assistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dalmedigos@gmail.com
+      name: roei dalmedigos
+    name: zigbee2mqtt
+    sources:
+    - https://github.com/Koenkk/zigbee2mqtt
+    urls:
+    - https://github.com/roeidalm/helm-chart/releases/download/zigbee2mqtt-1.19.0/zigbee2mqtt-1.19.0.tgz
+    version: 1.19.0
+generated: "2025-03-23T07:24:35.06955443Z"
