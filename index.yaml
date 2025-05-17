@@ -93,6 +93,34 @@ entries:
       selfUsages.image_name: luligu/matterbridge
       selfUsages.search-tag: \b\d+\.\d+\.\d+\b$
     apiVersion: v2
+    appVersion: 3.0.2
+    created: "2025-05-17T07:36:51.800924195Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Helm chart for deploying Home Assistant Matter Hub
+    digest: 8070d31ca66ac07c568c851016a483a129f814f677faea630b40a676e9210938
+    home: https://github.com/roeidalm/helm-chart/tree/main/charts/home-assistant-matter-hub
+    icon: https://raw.githubusercontent.com/Luligu/matterbridge/main/frontend/public/matterbridge%20624x624.png
+    keywords:
+    - home-assistant
+    - matter
+    - iot
+    - smart-home
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dalmedigos@gmail.com
+      name: roeidalm
+    name: home-assistant-matter-hub
+    type: application
+    urls:
+    - https://github.com/roeidalm/helm-chart/releases/download/home-assistant-matter-hub-3.0.2/home-assistant-matter-hub-3.0.2.tgz
+    version: 3.0.2
+  - annotations:
+      selfUsages.image_name: luligu/matterbridge
+      selfUsages.search-tag: \b\d+\.\d+\.\d+\b$
+    apiVersion: v2
     appVersion: 2.2.5
     created: "2025-03-23T07:24:34.832604828Z"
     dependencies:
@@ -176,4 +204,4 @@ entries:
     urls:
     - https://github.com/roeidalm/helm-chart/releases/download/zigbee2mqtt-1.19.0/zigbee2mqtt-1.19.0.tgz
     version: 1.19.0
-generated: "2025-03-23T07:40:15.732078104Z"
+generated: "2025-05-17T07:36:51.800940605Z"
