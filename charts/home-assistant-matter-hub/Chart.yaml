@@ -1,7 +1,7 @@
 apiVersion: v2
 name: home-assistant-matter-hub
-version: 2.2.5
-appVersion: 2.2.5
+version: 3.0.2
+appVersion: 3.0.2
 description: Helm chart for deploying Home Assistant Matter Hub
 type: application
 home: https://github.com/roeidalm/helm-chart/tree/main/charts/home-assistant-matter-hub
